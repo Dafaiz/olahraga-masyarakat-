@@ -1,0 +1,178 @@
+olahraga masyarakat 
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuesioner Olahraga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: none;
+        }
+        .question {
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background: #38bdf8;
+            color: black;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0ea5e9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Kuesioner Olahraga</h1>
+
+    <form id="formKuesioner">
+
+        <!-- Identitas -->
+        <label>Nama:</label>
+        <input type="text" name="nama" required>
+
+        <label>Umur:</label>
+        <input type="number" name="umur" required>
+
+        <!-- Pertanyaan -->
+        <div class="question">
+            <label>1. Seberapa sering kamu berolahraga?</label>
+            <select>
+                <option>Setiap hari</option>
+                <option>3-5 kali seminggu</option>
+                <option>1-2 kali seminggu</option>
+                <option>Jarang</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>2. Jenis olahraga favorit kamu?</label>
+            <select>
+                <option>Lari</option>
+                <option>Sepak bola</option>
+                <option>Badminton</option>
+                <option>Gym</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>3. Berapa lama biasanya kamu berolahraga?</label>
+            <select>
+                <option>< 30 menit</option>
+                <option>30-60 menit</option>
+                <option>1-2 jam</option>
+                <option>> 2 jam</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>4. Apa tujuan utama kamu berolahraga?</label>
+            <select>
+                <option>Kesehatan</option>
+                <option>Menurunkan berat badan</option>
+                <option>Menambah massa otot</option>
+                <option>Hobi</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>5. Kamu lebih suka olahraga sendiri atau tim?</label>
+            <select>
+                <option>Sendiri</option>
+                <option>Tim</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>6. Apakah kamu memiliki jadwal rutin olahraga?</label>
+            <select>
+                <option>Ya</option>
+                <option>Tidak</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>7. Apa hambatan terbesar untuk berolahraga?</label>
+            <select>
+                <option>Malas</option>
+                <option>Tidak ada waktu</option>
+                <option>Tidak ada fasilitas</option>
+                <option>Cepat lelah</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>8. Apakah kamu merasa olahraga meningkatkan kesehatanmu?</label>
+            <select>
+                <option>Sangat setuju</option>
+                <option>Setuju</option>
+                <option>Tidak yakin</option>
+                <option>Tidak setuju</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>9. Apakah kamu mengikuti pola makan sehat?</label>
+            <select>
+                <option>Ya</option>
+                <option>Kadang-kadang</option>
+                <option>Tidak</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>10. Seberapa penting olahraga menurutmu?</label>
+            <select>
+                <option>Sangat penting</option>
+                <option>Penting</option>
+                <option>Biasa saja</option>
+                <option>Tidak penting</option>
+            </select>
+        </div>
+
+        <button type="submit">Kirim Jawaban</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("formKuesioner").addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Jawaban berhasil dikirim! (simulasi)");
+    });
+</script>
+
+</body>
+</html>
